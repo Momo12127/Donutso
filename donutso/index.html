@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donutso</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+ 
+    <header class="header">
+      <div class="logo">Donutso</div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button onclick="logout()" class="logout">Logout</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart-icon">
+        <a href="cart.html">
+          <img src="./images/Cart.png" alt="Cart" class="cart-img">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+
+<section class="hero"> 
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Find the perfect donut<br>crafted just for you.</h1>
+      <p><span class="order-name">Donutso donut</span> A deliciously sweet donut with a crispy outside and soft, flavorful inside.</p>
+      <div class="price">
+        <span class="old-price">$0.99</span>
+        <span class="new-price">$0.29</span>
+      </div>
+      <button class="order-btn" id="order-btn" class="add-to-cart" class="flavor-card">Order Now</button>
+    </div>
+
+    <div class="hero-image">
+      <div class="circle-bg"></div>
+      <img src="./images/4.png" alt="Main Donut" class="floating-donut animated-donut" class="order-img">
+    </div>
+  </div>
+
+  
+  <div class="flavors-row">
+    <div class="flavor-card" data-name="Classic Glazed" data-price="4.00" data-image="./images/1.png">
+      <img src="./images/1.png" alt="Classic Donut">
+      <h4>Creama donut with chocolate sprinkels</h4>
+      <p class="price-label"> <div class="price">
+        <span class="old-price">$0.99</span>
+        <span class="new-price">$0.49</span>
+      </div></p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="flavor-card" data-name="Choco Deluxe" data-price="5.00" data-image="./images/2.jpeg">
+      <img src="./images/2.jpeg" alt="Chocolate Donut">
+      <h4>Strawberry donut with pistachio sause</h4>
+      <p class="price-label"> <div class="price">
+        <span class="old-price">$0.99</span>
+        <span class="new-price">$0.49</span>
+      </div></p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="flavor-card" data-name="Berry Burst" data-price="5.50" data-image="./images/3.png">
+      <img src="./images/3.png" alt="Strawberry Donut">
+      <h4>Creama donut with chocolate sprinkels</h4>
+      <p class="price-label"> <div class="price">
+        <span class="old-price">$0.99</span>
+        <span class="new-price">$0.49</span>
+      </div></p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+<section class="donut-categories">
+  <div class="category-card">
+    <div class="category-image" >
+      <img src="./images/classic donut.png" alt="Classic Donut">
+    </div>
+    <div class="category-content">
+      <a href="shop.html?filter=classic#classic" class="explore-link">
+      <h3>Classic Donuts</h3>
+      <p>Old-school deliciousness, made fresh daily.</p>
+     Explore</a>
+    </div>
+  </div>
+
+  <div class="category-card">
+    <div class="category-image">
+      <img src="./images/filled_donut.png" alt="filled Donuts">
+    </div>
+    <div class="category-content">
+      <a href="shop.html?filter=filled#filled" class="explore-link">
+      <h3>Filled Donuts</h3>
+      <p>Get your chocolate fix with every bite.</p>Explore</a>
+        </div>
+  </div>
+
+  <div class="category-card">
+    <div class="category-image">
+      <img src="./images/glazed.png" alt="Glazed Donuts">
+    </div>
+    <div class="category-content">
+      <a href="shop.html?filter=glazed#glazed" class="explore-link"> 
+      <h3>Glazed Donuts</h3>
+      <p>Get your chocolate fix with every bite.</p>Explore</a>
+    </div>
+  </div>
+
+ 
+</section>
+<section class="donut-home">
+  <div class="donut-home-container">
+    <div class="donut-home-image">
+      <img src="images/sponser.png" alt="Chocolate Filled Donut">
+    </div>
+    <div class="donut-home-content">
+      <h2>Dripping with Sweetness.</h2>
+      <p>In a world full of choices, Donutso brings you the one that truly satisfies. Soft, rich, and filled with joy!</p>
+      <a href="shop.html" class="explore-link"> <button class="donut-home-btn" >Explore Flavors</button></a>
+    </div>
+  </div>
+ 
+  
+
+  <div class="donut-video-section pink-bg">
+    <div class="donut-video-text">
+      <h3>Indulge in the Chocolate</h3>
+      <p>Every bite bursts with rich, creamy chocolate and a fluffiness you won’t forget. Taste the magic!</p>
+     <a href="./shop.html"> <button class="donut-home-btn">Order Now</button></a>
+    </div>
+    <div class="donut-video">
+      <video src="./images/video6043937683271590289 (1).mp4" autoplay muted loop playsinline></video>
+    </div>
+    
+  </div>
+  <section class="game-wrapper">
+ 
+    <div class="donut-preview">
+      <img id="donut-base" src="../donutso_game_assets/Bases/classic.png"  />
+      <img id="donut-topping" src=""  />
+      <img id="donut-extra" src="" />
+      <img id="donut-combo" style="display:none;" />
+      <div id="price">Total: $0.00</div>
+    </div>
+    <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+
+    
+
+    <div class="options-panel">
+      
+
+
+      <div class="options-section">
+        <div class="option-title">2. Topping</div>
+        <div class="options" id="topping-options">
+          <div class="option-card"><img src="../donutso_game_assets/Toppings/strawberry.png" data-type="topping" /></div>
+          <div class="option-card"><img src="../donutso_game_assets/Toppings/chocolate.png" data-type="topping" /></div>
+          <div class="option-card"><img src="../donutso_game_assets/Toppings/pistachio.png" data-type="topping" /></div>
+        </div>
+      </div>
+
+      <div class="options-section">
+        <div class="option-title">3. Extras</div>
+        <div class="options" id="extra-options">
+          <div class="option-card"><img src="../donutso_game_assets/Extras/sprinkles.png" data-type="extra" /></div>
+          <div class="option-card"><img src="../donutso_game_assets/Extras/Cookies.png" data-type="extra" /></div>
+          <div class="option-card"><img src="../donutso_game_assets/Extras/chocolate chips.png" data-type="extra" /></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  
+  <footer>
+  <section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-grid">
+      <div class="info-card">
+        <i class='bx bx-phone'></i>
+        <p><strong>Phone:</strong> +20 115 886 2316</p>
+      </div>
+      <div class="info-card">
+        <i class='bx bx-error-circle'></i>
+        <p><strong>Complaints:</strong> +39 350 482 364</p>
+      </div>
+      <div class="info-card">
+        <i class='bx bx-envelope'></i>
+        <p><strong>Email:</strong> donutso@gmail.com</p>
+      </div>
+      <div class="info-card">
+        <i class='bx bx-code-curly'></i>
+        <p><strong>Developer:</strong> +20 115 925 0900<br><strong>Email:</strong> mohamed12127@gmail.com</p>
+      </div>
+      <div class="info-card">
+        <i class='bx bx-map'></i>
+        <p><strong>Address:</strong> Napoli, Italy</p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+  
+
+
+  </div>
+
+
+  <div class="toast" id="toast"> 
+    <span class="toast-icon">✔️</span>
+     <span class="toast-message">Added to cart!</span> 
+  </div> 
+  <div id="toast" class="toast">✔️</div>
+
+  
+
+
+  <script src="./script.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Donutso</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">← Donutso</a></div>
+  </header>
+
+  <main class="checkout-container">
+    <div class="checkout-left">
+        <h2>Items in Your Cart</h2>
+        <div id="checkout-items"></div>
+        <div class="total-summary">
+          <strong>Total: <span id="checkout-total">0.00</span></strong>
+          <p id="checkout-discount-info" style="color: green; font-weight: bold;"></p>
+
+        </div>
+      </div>
+
+    <div class="checkout-right">
+      <h2>Complete Your Order</h2>
+      <form id="checkout-form">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9+]{10,15}">
+        <input type="text" name="address" placeholder="Address" required>
+
+        <div class="payment-methods">
+          <label><input type="radio" name="payment" value="paypal" required>
+            <img src="images/paypal.png" alt="PayPal">
+          </label>
+          <label><input type="radio" name="payment" value="instapay" required>
+            <img src="images/instapay.png" alt="Instapay">
+          </label>
+          <label><input type="radio" name="payment" value="vodafone" required>
+            <img src="images/vodafone.png" alt="Vodafone Cash">
+          </label>
+          <label><input type="radio" name="payment" value="visa" required>
+            <img src="images/visa.png" alt="Visa">
+          </label>
+        </div>
+
+        <button type="submit" class="submit-order" id="submit-order">Place Order</button>
+      </form>
+    </div>
+    <div class="toast" id="toast"> 
+      <span class="toast-icon">✔️</span>
+       <span class="toast-message">Done!</span> 
+    </div> 
+    <div id="toast" class="toast">✔️</div>
+  </main>
+
+ 
+
+  <script src="./checkout.js"></script>
+</body>
+</html>

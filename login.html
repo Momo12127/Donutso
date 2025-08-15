@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donutso Login & Sign Up</title>
+  <link rel="stylesheet" href="./donutso/login.css" />
+  <link rel="icon" type="image/png" href="./donutso/images/logo.png">
+</head>
+<body>
+  
+  <video autoplay muted loop class="bg-video">
+    <source src="./donutso/images/InShot_20250416_024116074.mp4" type="video/mp4" />
+  </video>
+
+  <div class="container active-login">
+   
+    <div class="welcome-section">
+      <video class="welcome-video" autoplay muted loop>
+        <source src="./donutso/images/InShot_20250415_232953154.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+
+    <div class="forms-container">
+   
+      <div class="form-container login">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <span class="switch-form">Sign Up</span></p>
+      </div>
+
+      
+      <div class="form-container signup">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-name" placeholder="Full Name" required />
+        <input type="email" id="signup-email" placeholder="Email" required />
+        <input type="password" id="signup-password" placeholder="Password" required />
+        <button onclick="signup()">Register</button>
+        <p>Already have an account? <span class="switch-form">Login</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast-message"> 
+    <span class="toast-icon"></span>
+    <span class="toast-message">Email already exists!</span> 
+</div>
+
+
+  <script src="./donutso/login.js"></script>
+</body>
+</html>
