@@ -1084,6 +1084,62 @@ body {
   }
 }
 
+/* الأساس */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: pink;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.logout-btn {
+  background: #ff4081;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* زرار القائمة (يظهر بس على الموبايل) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* أيقونة الكارت */
+.cart-icon {
+  position: relative;
+  font-size: 1.5rem;
+}
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+}
+
+/* 🎯 للموبايل */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
