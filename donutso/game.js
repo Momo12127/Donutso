@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+ window.addEventListener("DOMContentLoaded", () => {
   const baseImg = document.getElementById('donut-base');
   const toppingImg = document.getElementById('donut-topping');
   const extraImg = document.getElementById('donut-extra');
