@@ -1008,5 +1008,41 @@ body {
   height: 60px;
 }
 
+/* الأساس: اللينكات تبان بشكل عادي */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+/* للموبايل: نخفيهم افتراضيًا */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* نخفي القائمة العادية */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex; /* نعرضها بس عند الضغط */
+  }
+
+  .menu-toggle {
+    display: block; /* زرار ☰ يظهر */
+  }
+}
+
+/* زرار ☰ يختفي على الكمبيوتر */
+.menu-toggle {
+  display: none;
+}
 
 
